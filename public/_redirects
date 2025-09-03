@@ -1,0 +1,8 @@
+# Redirect all routes to index.html for SPA routing
+/*    /index.html   200
+
+# Health check endpoint
+/health    /index.html   200
+
+# API fallback (if needed in future)
+/api/*    /index.html   404

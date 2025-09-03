@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /
+
+# This is a demo application
+# Not intended for search engine indexing

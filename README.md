@@ -10,7 +10,7 @@ A cutting-edge AI-powered sales intelligence platform demo showcasing advanced p
 
 ## 🚀 Live Demo
 
-**[View Live Demo →](https://houndr-demo.onrender.com)**
+**[View Live Demo →](https://demo.houndr.ai)**
 
 ## ✨ Features
 

@@ -56,14 +56,28 @@ VITE_DEMO_MODE=true
 
 ## 🌐 Post-Deployment
 
-### Custom Domain (Optional)
-1. Go to your Render service dashboard
-2. Navigate to "Settings" → "Custom Domains"
-3. Add your domain and configure DNS
+### Custom Domain Setup (demo.houndr.ai)
+1. **In Render Dashboard:**
+   - Go to your service dashboard
+   - Navigate to "Settings" → "Custom Domains"
+   - Add `demo.houndr.ai`
+   - Render will provide DNS instructions
+
+2. **DNS Configuration:**
+   - Add a CNAME record in your DNS provider:
+   - **Type:** CNAME
+   - **Name:** demo
+   - **Value:** [provided by Render, typically: your-app-name.onrender.com]
+   - **TTL:** 300 (or default)
+
+3. **Verification:**
+   - DNS propagation can take 5-60 minutes
+   - Render will automatically verify and issue SSL certificate
 
 ### SSL Certificate
-- Render automatically provides SSL certificates
-- Your site will be available at `https://your-app-name.onrender.com`
+- Render automatically provides SSL certificates for custom domains
+- Your site will be available at `https://demo.houndr.ai`
+- Fallback URL: `https://houndr-demo.onrender.com`
 
 ## 🛠 Troubleshooting
 

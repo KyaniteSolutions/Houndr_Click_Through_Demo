@@ -5,10 +5,18 @@ services:
     buildCommand: npm ci && npm run build
     staticPublishPath: ./build
     pullRequestPreviewsEnabled: false
+    customDomains:
+      - demo.houndr.ai
     headers:
       - path: /*
         name: X-Robots-Tag
         value: noindex
+      - path: /*
+        name: X-Frame-Options
+        value: DENY
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
     routes:
       - type: rewrite
         source: /*
@@ -18,3 +26,5 @@ services:
         value: production
       - key: GENERATE_SOURCEMAP
         value: false
+      - key: VITE_APP_URL
+        value: https://demo.houndr.ai
